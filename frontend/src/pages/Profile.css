@@ -1,0 +1,106 @@
+.profile-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .profile-layout { grid-template-columns: 1fr; }
+}
+
+.profile-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: sticky;
+  top: 80px;
+}
+@media (max-width: 768px) {
+  .profile-tabs { flex-direction: row; overflow-x: auto; }
+}
+
+.profile-tab {
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: none;
+  border: 1px solid transparent;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.profile-tab:hover { background: var(--bg-hover); color: var(--text-primary); }
+.profile-tab.active {
+  background: rgba(139, 92, 246, 0.1);
+  border-color: var(--primary);
+  color: var(--primary-light);
+}
+
+.profile-content {
+  padding: 32px;
+  min-height: 500px;
+}
+.profile-content h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.profile-form .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 640px) {
+  .profile-form .form-grid { grid-template-columns: 1fr; }
+  .profile-form .form-grid .input-group[style*="span 2"] { grid-column: span 1 !important; }
+}
+
+.profile-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  padding: 18px !important;
+}
+.profile-item-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+.profile-item-info p {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.profile-item-date {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.profile-item-desc {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.profile-add-form {
+  padding: 20px !important;
+  border-style: dashed !important;
+}
+.profile-add-form h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+.profile-add-form .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}

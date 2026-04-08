@@ -1,0 +1,138 @@
+.jd-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 968px) {
+  .jd-layout { grid-template-columns: 1fr; }
+}
+
+.jd-header {
+  display: flex;
+  gap: 20px;
+  padding: 28px;
+  margin-bottom: 24px;
+  align-items: flex-start;
+}
+
+.jd-company-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.jd-header-info h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 4px;
+  background: none;
+  -webkit-text-fill-color: var(--text-primary);
+}
+
+.jd-company {
+  font-size: 16px;
+  color: var(--primary-light);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.jd-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.jd-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.jd-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.jd-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  white-space: pre-line;
+}
+
+.jd-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Sidebar */
+.jd-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 80px;
+}
+
+.jd-applied-card {
+  padding: 24px;
+  text-align: center;
+}
+.jd-applied-card h3 {
+  font-size: 18px;
+  color: var(--success);
+  margin: 8px 0 4px;
+}
+.jd-applied-card p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.jd-company-card {
+  padding: 20px;
+}
+.jd-company-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+.jd-company-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Applications list */
+.jd-apps-list { display: flex; flex-direction: column; gap: 10px; }
+.jd-app-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px !important;
+}
+.jd-app-info { flex: 1; }
+.jd-app-name { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+.jd-app-sub { font-size: 12px; color: var(--text-muted); }
+.jd-app-actions { display: flex; gap: 6px; }

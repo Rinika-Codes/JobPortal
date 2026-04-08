@@ -1,0 +1,54 @@
+.job-form { display: flex; flex-direction: column; gap: 24px; }
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 640px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .form-grid .input-group[style*="span 2"] { grid-column: span 1 !important; }
+}
+
+.form-skills-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+.text-muted { color: var(--text-muted); font-size: 13px; margin-bottom: 16px; }
+
+.skill-category { margin-bottom: 16px; }
+.skill-category h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skills-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.skill-chip {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+}
+.skill-chip:hover { border-color: var(--primary); color: var(--primary-light); }
+.skill-chip.selected {
+  background: rgba(139, 92, 246, 0.15);
+  border-color: var(--primary);
+  color: var(--primary-light);
+}
+.chip-x { font-size: 14px; font-weight: 700; }

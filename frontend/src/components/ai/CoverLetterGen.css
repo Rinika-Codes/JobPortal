@@ -1,0 +1,30 @@
+.cover-letter-gen { margin-top: 16px; }
+
+.cover-letter-card { padding: 24px; margin-top: 12px; }
+
+.cl-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.cl-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.cl-actions { display: flex; gap: 8px; }
+
+.cl-content {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+.cl-content p { margin-bottom: 4px; }

@@ -1,0 +1,41 @@
+.admin-section { padding: 24px; margin-bottom: 24px; }
+.admin-section h2 { font-size: 18px; font-weight: 600; color: var(--text-primary); margin-bottom: 20px; }
+
+.admin-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.admin-section-header h2 { margin-bottom: 0; }
+
+.industry-bars { display: flex; flex-direction: column; gap: 12px; }
+.industry-bar-item { display: flex; align-items: center; gap: 12px; }
+.industry-label { width: 120px; font-size: 13px; color: var(--text-secondary); font-weight: 500; }
+.industry-bar { flex: 1; height: 24px; background: var(--bg-primary); border-radius: 6px; overflow: hidden; }
+.industry-fill { height: 100%; background: var(--gradient-primary); border-radius: 6px; transition: width 1s ease; min-width: 20px; }
+.industry-count { font-size: 13px; font-weight: 600; color: var(--primary-light); width: 30px; text-align: right; }
+
+.admin-table-wrapper { overflow-x: auto; }
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.admin-table th {
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border);
+}
+.admin-table td {
+  padding: 12px 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+}
+.admin-table tbody tr:hover { background: var(--bg-hover); }
